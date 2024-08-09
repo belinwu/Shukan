@@ -3,6 +3,7 @@ package com.eesuhn.habittracker.feature.dashboard.ui.dashboard
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -38,7 +39,7 @@ import com.eesuhn.habittracker.core.model.Action
 import com.eesuhn.habittracker.core.model.Habit
 import com.eesuhn.habittracker.core.model.HabitId
 import com.eesuhn.habittracker.core.model.HabitWithActions
-import com.eesuhn.habittracker.core.ui.component.AppDefaultRootAppBar
+import com.eesuhn.habittracker.core.ui.component.AppDefaultAppBar
 import com.eesuhn.habittracker.core.ui.component.ContentWithPlaceholder
 import com.eesuhn.habittracker.core.ui.component.ErrorView
 import com.eesuhn.habittracker.core.ui.state.Result
@@ -104,7 +105,7 @@ fun DashboardScreen(
                 navigateToDetails,
                 navigateToSettings,
                 navigateToArchive,
-                navigateToExport, // TODO: unify click event listeners
+                navigateToExport,
                 onMove
             )
         }
@@ -195,20 +196,27 @@ private fun DashboardAppBar(
     onArchiveClick: () -> Unit,
     onExportClick: () -> Unit
 ) {
-    AppDefaultRootAppBar(
-        title = {
-            Text(
-                text = stringResource(R.string.dashboard_title),
-                style = AppTextStyle.screenTitle
-            )
-        },
-        actions = {
+    AppDefaultAppBar(
+        navigationIcon = {
             IconButton(onClick = onConfigClick) {
                 Icon(
                     DashboardIcons.DashboardLayout,
                     stringResource(R.string.dashboard_change_layout)
                 )
             }
+        },
+        title = {
+            Box(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Text(
+                    text = stringResource(R.string.dashboard_title),
+                    style = AppTextStyle.screenTitle,
+                    modifier = Modifier.align(Alignment.Center)
+                )
+            }
+        },
+        actions = {
             IconButton(onClick = onArchiveClick) {
                 Icon(
                     painter = CoreIcons.Archive,
