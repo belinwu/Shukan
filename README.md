@@ -1,16 +1,16 @@
-## Shukan <img src="./readme-doc/app-logo.png" alt="logo" width="20">
+## Shukan <img src="./readme-doc/app-logo.png" alt="logo" width="24">
 
 **Shukan** is a minimalist habit tracker built using *Kotlin* with *Jetpack Compose* and [*Room*](https://developer.android.com/training/data-storage/room). 
 
 [**Check out the Demo**]() 🌱
 
-<img src="./readme-doc/days-view.png" alt="screenshot" width="200">
-<img src="./readme-doc/heatmap.png" alt="screenshot" width="200">
-<img src="./readme-doc/mini-calendar.png" alt="screenshot" width="200">
+### Features:
 
-### Features
+| **Streak Tracking 📈**                                                     | **Heatmap 📊**                                                             | **Mini Calendar 📅**                                                             |
+|----------------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Easily track and maintain your habit streaks.                              | Visualize your progress with a heatmap.                                    | Quickly view your habits with a mini calendar.                                   |
+| <div align="center"><img src="./readme-doc/details.gif" width="200"></div> | <div align="center"><img src="./readme-doc/heatmap.gif" width="200"></div> | <div align="center"><img src="./readme-doc/switch-layout.gif" width="200"></div> |
 
-| **Streak Tracking 📈**                                        | **Heatmap 📊**                                                     | **Mini Calendar 📅**                                            |
-|---------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------|
-| Easily track and maintain your habit streaks.                 | Visualize your progress with a heatmap.                            | Quickly view your habits with a mini calendar.                  |
-| <img src="./readme-doc/details.gif" alt="gif" width="200">    | <img src="./readme-doc/heatmap.gif" alt="gif" width="200">         | <img src="./readme-doc/switch-layout.gif" alt="gif" width="200">|
+### Requirements:
+- **AGP 8.5.0**
+- **Java 17**
