@@ -2,7 +2,7 @@
 
 **Shukan** is a minimalist habit tracker built using *Kotlin* with *Jetpack Compose* and [*Room*](https://developer.android.com/training/data-storage/room). 
 
-[**Check out the Demo**]() 🌱
+[**Check out the Demo**](https://youtube.com/shorts/LYfN4Qeuzs0?feature=share) 🌱
 
 ### Features:
 
