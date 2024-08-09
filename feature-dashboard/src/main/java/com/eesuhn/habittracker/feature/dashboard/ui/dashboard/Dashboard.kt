@@ -33,6 +33,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.eesuhn.habittracker.core.common.OnboardingState
 import com.eesuhn.habittracker.core.model.Action
@@ -211,7 +212,7 @@ private fun DashboardAppBar(
             ) {
                 Text(
                     text = stringResource(R.string.dashboard_title),
-                    style = AppTextStyle.screenTitle,
+                    style = AppTextStyle.screenTitle.copy(fontWeight = FontWeight.Bold),
                     modifier = Modifier.align(Alignment.Center)
                 )
             }
